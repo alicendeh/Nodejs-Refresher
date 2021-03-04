@@ -1,29 +1,29 @@
 const express = require("express");
 const validator = require("express-validator");
-const route = express.Router();
+const router = express.Router();
 
 //get all users contacts:PRIIVATE
 
-route.get("/", (req, res) => {
+router.get("/", (req, res) => {
   res.send("get all contacts");
 });
 
 //adding contacts:PRIVATE
 
-route.post("/", (req, res) => {
+router.post("/", (req, res) => {
   res.send("add contact");
 });
 
 //update contact:PRIVATE
 
-route.put("/:id", (req, res) => {
+router.put("/:id", (req, res) => {
   res.send("update contact");
 });
 
 //delete contact:PRIVATE
 
-route.delete("/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
   res.send("delete contact");
 });
 
-module.exports = route;
+module.exports = router;
